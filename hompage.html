@@ -1,20 +1,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/homepage.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
         <meta name="robots" context="noindex, nofollow" />
         <script>
         function showTime(){
             var date = new Date();
             var h = date.getHours(); // 0 - 23
             var m = date.getMinutes(); // 0 - 59
-            var s = date.getSeconds(); // 0 - 59
-
+            aorp = "AM";
             h = (h < 10) ? "0" + h : h;
             m = (m < 10) ? "0" + m : m;
-            s = (s < 10) ? "0" + s : s;
 
-            var time = h + ":" + m + ":" + s + " " + session;
-            document.getElementById("clock").innerText = time;
+            if(h > 12) {
+                aorp = "PM";
+                h = h - 12;
+            }
+
+            var time = h + ":" + m + " " + aorp;
+            document.getElementById("clock").innerHTML = time;
             document.getElementById("clock").textContent = time;
 
             setTimeout(showTime, 1000);
@@ -24,23 +28,25 @@
         showTime();
         </script>
     </head>
-    <body>
-          <h1 id="clock">Time</h1>
+    <body onload="showTime();">
+          <div class="center"><h1 id="clock">Time</h1></div>
           <br />
           <hr />
           <br />
           <br />
           <div id="left">
               <h3>School</h3>
-              <ul></ul>
-          </div>
-          <div id="middle">
-              <h3>Programming</h3>
-              <ul></ul>
+              <ul>
+                  <li><a href="">Blackboard</a></li>
+                  <li><a href="">Campus Connection</a></li>
+                  <li><a href="">Outlook</a></li>
+              </ul>
           </div>
           <div id="right">
-              <h3>Cyber</h3>
-              <ul></ul>
+              <h3>General</h3>
+              <ul>
+                  <li>test</li>
+              </ul>
           </div>
     </body>
 </html>
