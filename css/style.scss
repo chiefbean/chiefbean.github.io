@@ -21,12 +21,6 @@ header {
 	border-right: $border;
 	text-align: center;
 	width: 100%;
-	grid: {
-		column-start: 1;
-		column-end: 1;
-		row-start: 1;
-		row-end: 2;
-	}
 	h1 {
 		padding: 50px;
 		margin-bottom: 0;
@@ -43,12 +37,6 @@ header {
 }
 aside {
 	width: 100%;
-	grid: {
-		column-start: 1;
-		column-end: 1;
-		row-start: 2;
-		row-end: 6;
-	}
 	border-right: $border;
 	nav ul {
 		margin: 0 50px 0 50px;
@@ -78,30 +66,70 @@ section {
 		column-start: 2;
 		column-end: 2;
 		row-start: 1;
-		row-end: 4;
+		row-end: 7;
 	}
 	div {
 			width: 80%;
 			margin: auto;
-			p {
-				width: 72%;
-				float: left;
-				padding: {
-					left: 15px;
-					right: 15px;
-				}
-				display: block;
-			}
-			img {
-				width: 22%;
-				float: left;
-				display: block;
-				padding: {
-					top: 20px;
-					bottom: 10px;
-				}
+	}
+	#tech {
+		width: 80%;
+		margin: auto;
+		display: grid;
+		grid: {
+			row-gap: 0px;
+			column-gap: 0px;
+			template-columns: 50% 50%;
+		}
+		h2 {
+			grid: {
+				column-start: 1;
+				column-end: 1;
+				row-start: 1;
+				row-end: 1;
 			}
 		}
+		#web {
+			grid: {
+				column-start: 1;
+				column-end: 1;
+				row-start: 2;
+				row-end: 2;
+			}
+			width: 90%;
+			margin: auto;
+		}
+		#pro {
+			grid: {
+				column-start: 2;
+				column-end: 2;
+				row-start: 2;
+				row-end: 2;
+			}
+			width: 90%;
+			margin: auto;
+		}
+		#db {
+			grid: {
+				column-start: 1;
+				column-end: 1;
+				row-start: 3;
+				row-end: 3;
+			}
+			width: 90%;
+			margin: auto;
+		}
+		#os {
+			grid: {
+				column-start: 2;
+				column-end: 2;
+				row-start: 3;
+				row-end: 3;
+			}
+			width: 90%;
+			margin: auto;
+		}
+	}
 	hr {
 		width: 80%;
 		margin: auto;
@@ -112,13 +140,20 @@ section {
 footer {
 	text-align: center;
 	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 25px;
+}
+
+#sidebar {
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
 	border-right: $border;
-	grid: {
-		column-start: 1;
-		column-end: 1;
-		row-start: 6;
-		row-end: 7;
-	}
 }
 
 @media only screen and (max-width: 978px) {
@@ -186,7 +221,7 @@ footer {
 			row-end: 10;
 		}
 	}
-		
+
 	footer {
 		border: none;
 		text-align: center;

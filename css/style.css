@@ -14,10 +14,6 @@ header {
   border-right: 4px solid black;
   text-align: center;
   width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 header h1 {
   padding: 50px;
@@ -33,10 +29,6 @@ header h5 {
 
 aside {
   width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 6;
   border-right: 4px solid black;
 }
 aside nav ul {
@@ -66,25 +58,57 @@ section {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 7;
 }
 section div {
   width: 80%;
   margin: auto;
 }
-section div p {
-  width: 72%;
-  float: left;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: block;
+section #tech {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  grid-template-columns: 50% 50%;
 }
-section div img {
-  width: 22%;
-  float: left;
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 10px;
+section #tech h2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+section #tech #web {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  width: 90%;
+  margin: auto;
+}
+section #tech #pro {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  width: 90%;
+  margin: auto;
+}
+section #tech #db {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  width: 90%;
+  margin: auto;
+}
+section #tech #os {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  width: 90%;
+  margin: auto;
 }
 section hr {
   width: 80%;
@@ -96,11 +120,20 @@ section hr {
 footer {
   text-align: center;
   width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+
+#sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
   border-right: 4px solid black;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 6;
-  grid-row-end: 7;
 }
 
 @media only screen and (max-width: 978px) {
