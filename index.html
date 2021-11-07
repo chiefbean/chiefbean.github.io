@@ -1,130 +1,53 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://chiefbean.github.io/bean-css/bean.min.css" crossorigin="anonymous" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="robots" context="index" />
 	</head>
 	<body>
-		<div id="sidebar">
-			<header>
-				<h1>Steven Karschnia</h1>
+		<div class="w-20 left h-100 pos-fix left0 top0 ox-hidden">
+			<header class="center w-100">
+				<h1>steven karschnia</h1>
 			</header>
-			<aside>
+			<aside class="w-80 mx-1">
 				<nav>
-					<ul>
-						<li><a href="https://github.com/chiefbean"><img src="images/fluidicon.png"/> &nbsp;Github</a></li>
-						<li><a href="https://www.linkedin.com/in/steven-karschnia-5234b017b"><img src="images/link.png"/> &nbsp; LinkedIn</a></li>
+					<ul class="list-none border-left border-s border-reg p0">
+						<li onclick="window.open('https://github.com/chiefbean')" class="bg-trans bg-2a px-1 py-05 pointer"><a href="https://github.com/chiefbean" class="textd-none text-p"><img src="images/fluidicon.png" class="hem-xs wem-xs"/> &nbsp;github</a></li>
+						<li onclick="window.open('https://www.linkedin.com/in/steven-karschnia-5234b017b')" class="bg-trans bg-2a px-1 py-05 pointer"><a href="https://www.linkedin.com/in/steven-karschnia-5234b017b" class="textd-none text-p"><img src="images/link.png" class="hem-xs wem-xs"/> &nbsp; linkedin</a></li>
 					</ul>
 				</nav>
 			</aside>
-			<footer>Steven Karschnia &copy; 2020</footer>
+			<footer class="pos-abs bottom0 center w-100">steven karschnia &copy; 2021</footer>
 		</div>
-		<section>
-			<div>
-				<h2>Work Experience</h2>
-				<p><strong>Smiths Medical,</strong> Minneapolis, MN <span style="float:right;">June 2020 - August 2020</span>
-					<br />
-					<i>Product Security Intern, R&amp;D</i>
-					<br />
-					The Product Security Team at Smiths Medical focused on finding, testing, and responding to
-					potential vulnerabilities in their medical devices and the Off the Shelf software running on their devices.
-					My focus was on writing exploits for known vulnerabilities, vulnerabilities with CVEs assigned,
-					and testing the medical devices for those vulnerabilities.  I also created an automated vulnerability
-					search tool that found any knew or updated CVE for the software running on the devices.  Some of my time
-					was spent doing "Hardware Hacking", taking apart the device and trying to use the hardware to gain access.
-					<ul>
-						<li>Gained experience in writing exploits from scratch based on CVE description and other vendor responses.</li>
-						<li>Learned more about how the hardware of a device can be used to gather information and gain access.</li>
-					</ul>
-					<br />
-					<strong>Wipfli LLP,</strong> Minneapolis, MN <span style="float:right;">June 2019 - August 2019</span>
-					<br />
-					<i>Intern, Cyber Security Consulting</i>
-					<br />
-					At Wipfli, I worked on the Cyber Security Consulting Team which did penetration testing, vulnerability assessments,
-					social engineering.  My main work was done in vulnerability assessment and phishing campaigns but I also helped with
-					a few external and internal penetration tests.  On the penetration tests I helped with, most of my work was done in
-					reconnaissence and information gathering as well as watching and learning the techniques used by my co-workers.
-					For vulnerability assessments, I would run a scan through Nessus and then generate a report and then filter that report
-					before sending it to the client for review.  The phishing campaigns I worked on I created realistic looking emails and
-					landing pages for the client and then sent the email out to specific employees that the client selected.
-					<ul>
-						<li>Performed all different kinds of testing and learned tricks regarding how to exploit a company's network.</li>
-						<li>Wrote reports on findings to give the client background on what process was taken.</li>
-					</ul>
-					<br />
-					<strong>North Dakota State University,</strong> Fargo, ND <span style="float:right;">September 2018 - Present</span>
-					<br />
-					<i>Web Application Programmer</i>
-					<br />
-					As a Web Application Programmer at NDSU, I have worked on a variety of projects focusing on many different technologies
-					including: Java, Groovy, PHP, Grouper, SQL, REST APIs, Apache Shiro, Duo, and Apache Tapestry.  I have worked a lot with
-					REST APIs, both using and writing them.  One of my larger projects included migrating the version control system from Subversion to Bitbucket.
-					<ul>
-						<li>Program, test, debug, and maintain web applications.</li>
-						<li>Solve inoperability issues in the NDSU environment.</li>
-					</ul>
-				</p>
-			</div>
-			<div>
-				<h2>Certifications</h2>
-				<p><strong>Certified Ethical Hacker v10</strong> <span style="float:right;">September 2018 - September 2021</span>
-					<br />
-					<i>EC-Council</i>
-				</p>
-			</div>
-			<div id="tech">
-				<h2>Technologies</h2>
-				<div id="web">
-					<strong>Web Design</strong>
-					<br />
-					Created many websites using HTML, CSS, JavaScript, PHP, Angular, React.js.
-					<ul>
-						<li>Designed and created a website for a Minneapolis based hair salon. [<a href="http://defyhairmpls.com">Defy Hair</a>]</li>
-						<li>Took a web scripting class where we learned about PHP and JavaScript.</li>
-					</ul>
+		<section class="w-80 right border-left border-sm h-100 oy-scroll">
+			<div class="w-80 m-auto">
+				<h2>projects</h2>
+				<hr class="border-top border-p"/>
+				<div>
+					<h4>gitex</h4>
+					<p>a git web client using flask, currently in development. [<a href="https://github.com/chiefbean/gitex">repo</a>]</p>
 				</div>
-				<div id="pro">
-					<strong>Programming</strong>
-					<br />
-					Known languages: Java, C#, Python, C, C++
-					<ul>
-						<li>Learned Python by programming games like asteroids. [<a href="http://www.codeskulptor.org/#user33_5m2aQHgVeD_7.py">Asteroids</a>]</li>
-						<li>Learned Java, C#, C, and C++ through my course work at NDSU.</li>
-					</ul>
+				<hr class="border-top border-p"/>
+				<div>
+					<h4>defy hair mpls</h4>
+					<p>website i created for a minneapolis based hair salon. [<a href="http://defyhairmpls.com">link</a>]</p>
 				</div>
-				<div id="db">
-					<strong>Databases</strong>
-					<ul>
-						<li>Have done extensive work using both MySQL and PostgreSQL.</li>
-						<li>Took a formal course on databases and database design.</li>
-					</ul>
+				<hr class="border-top border-p"/>
+				<div>
+					<h4>shotify</h4>
+					<p>a song knowledge game i created using react and node. [<a href="https://shotify.xyz">link</a>]</p>
 				</div>
-				<div id="os">
-					<strong>Operating Systems</strong>
-					<ul>
-						<li>Have extensively used MacOS, Windows, Linux (namely Ubuntu, Kali, and Arch).</li>
-						<li>Completed a Linux From Scratch operating system. [<a href="http://linuxfromscratch.org/">Linux From Scratch</a>]</li>
-						<li>Started development of my own operating system. [<a href="https://github.com/chiefbean/beanos">OS Dev Git Repo</a>]</li>
-					</ul>
+				<hr class="border-top border-p"/>
+				<div>
+					<h4>beanos</h4>
+					<p>the starting of a custom operating system, for fun? [<a href="https://github.com/chiefbean/beanos">repo</a>]</p>
 				</div>
-			</div>
-			<div>
-				<h2>Education</h2>
-				<p><strong>North Dakota State University,</strong> Fargo, ND <span style="float:right;">September 2017 - December 2020</span>
-				<br />
-				BS in Computer Science with a Minor in Statistics
-				</p>
-			</div>
-			<div>
-				<h2>Extracurriculars</h2>
-				<p>
-					<strong>President,</strong>  NDSU Cybersecurity Student Association<span style="float:right;">January 2019 - May 2020</span>
-					<br />
-					As a Freshman, I was a founding member of the NDSU Cyber Security Student Association.  I spent a little over a year as the acting
-					president of the club.  My role was to facilitate peer learning on Cyber Security topics as well as set up speakers, coordinate
-					meetings, and make teams for Cyber Security competitions.
-				</p>
+				<hr class="border-top border-p"/>
+				<div>
+					<h4>curses-blackjack</h4>
+					<p>a simple blackjack game run completely in the terminal, written in python. [<a href="https://github.com/chiefbean/curses-blackjack">repo</a>]</p>
+				</div>
 			</div>
 		</section>
 	</body>
